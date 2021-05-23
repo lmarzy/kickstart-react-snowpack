@@ -1,0 +1,41 @@
+{
+  "name": "kickstart-react-snowpack",
+  "version": "1.0.0",
+  "description": "React starter project written in Typescript using Snowpack for the build",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "prepare": "husky install",
+    "prettier:fix": "prettier './src/**/*.{ts,tsx}' --write",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmarzy/kickstart-react-snowpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmarzy/kickstart-react-snowpack/issues"
+  },
+  "homepage": "https://github.com/lmarzy/kickstart-react-snowpack#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.0",
+    "snowpack": "^3.5.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
