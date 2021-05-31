@@ -1,21 +1,25 @@
-import React, { useState, useEffect, FunctionComponent } from 'react';
+import React, { FC } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-export const App: FunctionComponent = () => {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Update the count (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
+import routes from '../../config/routes';
+import { Header } from '../layout/header/header';
+
+export const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Page has been open for <code>{count}</code> seconds.
-        </p>
-      </header>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Switch>
+          {routes.map((route) => (
+            <Route
+              key={route.key}
+              path={route.path}
+              component={route.component}
+              exact
+            />
+          ))}
+        </Switch>
+      </main>
+    </>
   );
 };
