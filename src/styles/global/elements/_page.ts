@@ -25,8 +25,8 @@ export const page = css`
     font-family: ${fontFamily};
     font-size: ${(fontSizePx / baseFontSize) * 100 + '%'};
     line-height: ${lineHeight};
-    color: black;
-    background-color: white;
+    color: var(--col-text);
+    background-color: var(--col-bg);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }

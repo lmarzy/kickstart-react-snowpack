@@ -1,3 +1,7 @@
+// ========================================================================
+// THEME/SPACING
+// ========================================================================
+
 import { lineHeightPx } from '../settings';
 import { pxToRem } from '../utils';
 
@@ -9,4 +13,5 @@ export const spacing = `
 --spacing-3: ${pxToRem(multiplier * 3)};
 --spacing-4: ${pxToRem(multiplier * 4)};
 --spacing-5: ${pxToRem(multiplier * 5)};
+--spacing-6: ${pxToRem(multiplier * 6)};
 `;
