@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { theme } from '../theme/theme';
+import { theme } from '../tokens';
 
 import { boxSizing, normalise, reset } from './base';
 import { images, links, page, tables } from './elements';

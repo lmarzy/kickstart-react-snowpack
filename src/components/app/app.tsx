@@ -3,7 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 
 import routes from '../../config/routes';
 import GlobalStyles from '../../styles/global';
-import { Header } from '../layout/header/header';
+
+import { Header } from './components/header/header';
 
 export const App: FC = () => {
   return (

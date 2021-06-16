@@ -6,7 +6,11 @@
     "jsx": "react",
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "~/components/*": ["./components/*"]
+    }
   },
   "include": ["./src/"],
   "exclude": ["node_modules,", "build"]
