@@ -9,7 +9,10 @@
     "esModuleInterop": true,
     "baseUrl": "./src",
     "paths": {
-      "~/components/*": ["./components/*"]
+      "~/components/*": ["./components/*"],
+      "~/config/*": ["./config/*"],
+      "~/styles/*": ["./styles/*"],
+      "~/shared/*": ["./shared/*"]
     }
   },
   "include": ["./src/"],

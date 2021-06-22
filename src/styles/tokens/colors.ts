@@ -3,10 +3,11 @@
 // ========================================================================
 
 export const colors = `
-  --col-bg: white;
-  --col-text: black;
+  --col-bg: hsla(0, 0%, 100%, 1);
+  --col-text: hsla(240, 23%, 23%, 1);
 
-  --col-primary: blue;
+  --col-primary: hsla(236, 52%, 44%, 1);
+  --col-secondary: hsla(319, 48%, 53%, 1);
   
   --col-grey-0: hsla(0, 0%, 0%, 1);
   --col-grey-25: hsla(0, 0%, 25%, 1);

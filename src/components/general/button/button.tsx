@@ -1,22 +1,18 @@
 import React, { ButtonHTMLAttributes, FC } from 'react';
 
-import { ColorType } from '../../../shared/types-styles';
-
 import { StyledButton } from './button.styled';
 
-export type Variant = 'solid' | 'outline';
+export type Variant = 'primary' | 'secondary';
 export type Size = 'small' | 'medium' | 'large';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  colorTheme?: ColorType;
   variant?: Variant;
   size?: Size;
   isFullWidth?: boolean;
 }
 
 export const Button: FC<ButtonProps> = ({
-  colorTheme = 'blue',
-  variant = 'solid',
+  variant = 'primary',
   size = 'medium',
   isFullWidth = false,
   children,
@@ -25,9 +21,8 @@ export const Button: FC<ButtonProps> = ({
   return (
     <StyledButton
       type="button"
-      $colorTheme={colorTheme}
-      $size={size}
       $variant={variant}
+      $size={size}
       $isFullWidth={isFullWidth}
       {...props}
     >

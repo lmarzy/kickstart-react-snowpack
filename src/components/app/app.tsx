@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import routes from '../../config/routes';
-import GlobalStyles from '../../styles/global';
+import routes from '~/config/routes';
+import GlobalStyles from '~/styles/global';
 
 import { Header } from './components/header/header';
 

@@ -1,12 +1,34 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import { FontSizeType } from '../../../shared/types-styles';
+import { ColorType, FontSizeType, SpacingType } from '~/shared/unions/styles';
+import { vr } from '~/styles/utils';
 
 interface StyledHeadingProps {
   $size: FontSizeType;
+  $color?: ColorType;
+  $mb?: SpacingType;
+  $mt?: SpacingType;
 }
 
 export const StyledHeading = styled.h1<StyledHeadingProps>`
   font-size: var(--size-${({ $size }) => $size});
-  color: var(--col-blue);
+  line-height: ${({ $size }) => vr($size)};
+
+  ${({ $color }) =>
+    $color &&
+    css`
+      color: var(--spacing-${$color});
+    `}
+
+  ${({ $mb }) =>
+    $mb &&
+    css`
+      margin-bottom: var(--spacing-${$mb});
+    `}
+
+  ${({ $mt }) =>
+    $mt &&
+    css`
+      margin-top: var(--spacing-${$mt});
+    `}
 `;
