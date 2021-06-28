@@ -27,7 +27,5 @@ export const page = css`
     line-height: ${lineHeight};
     color: var(--col-text);
     background-color: var(--col-bg);
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
   }
 `;
