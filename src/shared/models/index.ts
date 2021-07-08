@@ -1,0 +1,1 @@
+export { StarWarsModel } from './starwars';

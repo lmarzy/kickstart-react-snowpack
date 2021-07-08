@@ -6,6 +6,7 @@ module.exports = {
     '^~/config/(.*)': '<rootDir>/src/config/$1',
     '^~/styles/(.*)': '<rootDir>/src/styles/$1',
     '^~/shared/(.*)': '<rootDir>/src/shared/$1',
+    '^~/contexts/(.*)': '<rootDir>/src/contexts/$1',
   },
   transform: {
     '^.+\\.(ts|tsx|js)$': 'ts-jest',

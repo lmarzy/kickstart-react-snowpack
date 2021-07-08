@@ -12,7 +12,8 @@
       "~/components/*": ["./components/*"],
       "~/config/*": ["./config/*"],
       "~/styles/*": ["./styles/*"],
-      "~/shared/*": ["./shared/*"]
+      "~/shared/*": ["./shared/*"],
+      "~/contexts/*": ["./contexts/*"]
     }
   },
   "include": ["./src/"],

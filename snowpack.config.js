@@ -24,5 +24,6 @@ module.exports = {
     '~/config': './src/config',
     '~/styles': './src/styles',
     '~/shared': './src/shared',
+    '~/contexts': './src/contexts',
   },
 };
