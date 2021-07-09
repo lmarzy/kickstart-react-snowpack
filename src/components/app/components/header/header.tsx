@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Nav } from '~/components/app/components/nav/nav';
-import { Box } from '~/components/general';
-import { Heading, Text } from '~/components/typography';
+import { Box } from '~/components/elements/general';
+import { Heading, Text } from '~/components/elements/typography';
 
 import { StyledHeading } from './header.styled';
 
