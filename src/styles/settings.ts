@@ -17,3 +17,10 @@ export const fontSizesPx = {
   3: 28,
   4: 40,
 };
+
+export type BreakpointValues = 'sm' | 'md';
+
+export const breakpoints: Record<BreakpointValues, number> = {
+  sm: 600,
+  md: 1000,
+};

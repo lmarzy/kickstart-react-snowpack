@@ -1,4 +1,3 @@
-import { breakpoints } from './breakpoints';
 import { colors } from './colors';
 import { fontSizes } from './font-sizes';
 import { layout } from './layout';
@@ -10,6 +9,5 @@ export const theme = `
     ${spacing}
     ${layout}
     ${colors}
-    ${breakpoints}
   }
 `;
