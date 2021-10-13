@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
     jest: true,
+    node: true,
   },
   extends: [
     'eslint:recommended',
@@ -31,6 +32,7 @@ module.exports = {
     'import/order': [
       'error',
       {
+        groups: ['builtin', 'external', 'internal'],
         pathGroups: [
           {
             pattern: '~/**',
@@ -38,7 +40,6 @@ module.exports = {
             position: 'after',
           },
         ],
-        groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
