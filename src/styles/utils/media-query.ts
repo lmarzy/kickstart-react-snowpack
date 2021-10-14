@@ -1,8 +1,8 @@
+import { BreakpointType } from '~/shared/unions/styles';
+
 import { pxToEm } from '.';
-import { breakpoints, BreakpointValues } from '../settings';
+import { breakpoints } from '../settings';
 
-type mediatype = 'min' | 'max';
-
-export const mediaQuery = (type: mediatype, bp: BreakpointValues): string => {
+export const mediaQuery = (type: 'min' | 'max', bp: BreakpointType): string => {
   return `@media (${type}-width: ${pxToEm(breakpoints[bp])})`;
 };

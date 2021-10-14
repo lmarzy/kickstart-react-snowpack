@@ -12,3 +12,5 @@ export type ColorType =
   | 'grey-100';
 
 export type HeightType = 'small' | 'medium' | 'large';
+
+export type BreakpointType = 'sm' | 'md' | 'lg';

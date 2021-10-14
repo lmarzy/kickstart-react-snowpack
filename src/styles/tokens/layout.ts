@@ -6,5 +6,4 @@ import { pxToRem } from '../utils';
 
 export const layout = `
   --max-width: ${pxToRem(2000)};
-  --grid-columns: 12;
 `;

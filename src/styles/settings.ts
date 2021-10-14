@@ -2,6 +2,8 @@
 // CORE SETTINGS
 // ========================================================================
 
+import { BreakpointType } from '~/shared/unions/styles';
+
 export const baseFontSize = 16;
 export const baselineHeight = 16 * 1.5;
 
@@ -18,9 +20,10 @@ export const fontSizesPx = {
   4: 40,
 };
 
-export type BreakpointValues = 'sm' | 'md';
+export const gridColumns = 12;
 
-export const breakpoints: Record<BreakpointValues, number> = {
+export const breakpoints: Record<BreakpointType, number> = {
   sm: 600,
   md: 1000,
+  lg: 1400,
 };
