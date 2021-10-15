@@ -1,6 +1,6 @@
 import React, { FC, SelectHTMLAttributes } from 'react';
 
-import { StyledSelect } from '../field.styled';
+import { StyledSelect } from '../styles';
 
 type Option = {
   id: string;

@@ -5,5 +5,5 @@
 import { pxToRem } from '../utils';
 
 export const layout = `
-  --max-width: ${pxToRem(2000)};
+  --max-width: ${pxToRem(1200)};
 `;

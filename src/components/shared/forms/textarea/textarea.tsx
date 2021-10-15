@@ -1,6 +1,6 @@
 import React, { FC, TextareaHTMLAttributes } from 'react';
 
-import { StyledTextarea } from '../field.styled';
+import { StyledTextarea } from '../styles';
 
 interface InputProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   id: string;

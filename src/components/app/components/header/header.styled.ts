@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 import { mediaQuery } from '~/styles/utils';
 
-export const StyledHeading = styled.h1`
-  font-size: var(--size-3);
+export const StyledHeader = styled.header`
   margin-bottom: var(--spacing-2);
   color: var(--col-primary);
 

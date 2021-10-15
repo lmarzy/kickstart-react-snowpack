@@ -1,6 +1,6 @@
 import React, { FC, InputHTMLAttributes } from 'react';
 
-import { StyledInput } from '../field.styled';
+import { StyledInput } from '../styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string;

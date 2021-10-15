@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
+import { gridColumns } from '~/styles/settings';
 import { mediaQuery } from '~/styles/utils';
 
-import { gridColumns } from '../../../../styles/settings';
 import { GridColumnType } from './grid';
 
 interface GridItemProps {
@@ -18,30 +18,20 @@ export const StyledGrid = styled.div`
   gap: var(--spacing-2);
 `;
 
+const getMediaQuery = (type: 'sm' | 'md' | 'lg', bp: number) => {
+  return css`
+    ${mediaQuery('min', type)} {
+      grid-column: span ${bp};
+    }
+  `;
+};
+
 export const StyledGridItem = styled.div<GridItemProps>`
   grid-column: span ${({ $span }) => $span};
 
-  ${({ $bpSm }) =>
-    $bpSm &&
-    css`
-      ${mediaQuery('min', 'sm')} {
-        grid-column: span ${$bpSm};
-      }
-    `};
+  ${({ $bpSm }) => $bpSm && getMediaQuery('sm', $bpSm)};
 
-  ${({ $bpMd }) =>
-    $bpMd &&
-    css`
-      ${mediaQuery('min', 'md')} {
-        grid-column: span ${$bpMd};
-      }
-    `};
+  ${({ $bpMd }) => $bpMd && getMediaQuery('md', $bpMd)};
 
-  ${({ $bpLg }) =>
-    $bpLg &&
-    css`
-      ${mediaQuery('min', 'lg')} {
-        grid-column: span ${$bpLg};
-      }
-    `};
+  ${({ $bpLg }) => $bpLg && getMediaQuery('lg', $bpLg)};
 `;
