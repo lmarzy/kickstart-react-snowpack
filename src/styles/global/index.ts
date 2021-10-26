@@ -1,11 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { theme } from '../tokens';
 import { boxSizing, normalise, reset } from './base';
 import { images, links, page, tables } from './elements';
 
 export default createGlobalStyle`
-  ${theme}
   ${boxSizing}
   ${reset}
   ${normalise}

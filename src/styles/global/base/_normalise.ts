@@ -40,10 +40,4 @@ export const normalise = `
     font: inherit;
     cursor: pointer;
   }
-
-  // Set display to block for IE
-
-  main {
-    display: block;
-  }
 `;
