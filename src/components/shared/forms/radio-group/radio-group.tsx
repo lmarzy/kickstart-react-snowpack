@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FunctionComponent } from 'react';
 
-import { Grid } from '../../layout/grid/grid';
+import { Grid, GridColumnType } from '../../layout/grid/grid';
 import { InputButton } from '../input-button/input-button';
 
 interface Option {
@@ -12,7 +12,7 @@ interface Option {
 export interface RadioGroupProps {
   name: string;
   options: Option[];
-  gridSpan?: number;
+  gridSpan?: GridColumnType;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
