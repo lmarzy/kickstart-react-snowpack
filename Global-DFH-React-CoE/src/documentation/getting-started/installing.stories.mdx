@@ -1,0 +1,71 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import pkg from '../../../package.json';
+
+<Meta title={`GETTING STARTED/Installing ${pkg.version}`} />
+
+# Installing the design system and components
+
+<p>Latest version - {pkg.version}</p>
+
+The design system and components are designed to be used with the React Library.
+
+The design system provides global styles which include all the design tokens. The design tokens are all stored using CSS custom properties.
+
+The components that are available can be seen in the left menu under components, all components are developed using Typescript, the components can be used in both Typescript and non Typescript environments as the types are provided sepeartely.
+
+## Including the UI-kit
+
+The UI-Kit will need to be added to your project as a dependency. You can install this through npm or yarn. We recommend you stick with using npm.
+
+Before you can install the UI kit you will need to setup npm to enable getting the package from our own Azure Artifacts.
+
+The setup differs depending of if you work on a windows machine or Mac
+
+### Windows setup
+
+#### Step 1
+
+```
+npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+```
+
+#### Step 2
+
+Add a `.npmrc` file to the root of the project with teh following:
+
+```
+registry=https://pkgs.dev.azure.com/marsanalytics/fe07f7d2-9503-40ee-acf4-2175d36b12cf/_packaging/ui-kit/npm/registry/
+
+always-auth=true
+```
+
+#### Step 3
+
+Then, run vsts-npm-auth to get an Azure Artifacts token added to your user-level `.npmrc` file
+
+```
+vsts-npm-auth -config .npmrc
+```
+
+### Non windows setup
+
+for non windows machines you will need to add the `.npmrc` file to root of the project and then generate a a user-level `.npmrc` file manually.
+You will then need to generate a personal acces token (PAT) and add the token details to your user-level `.npmrc` file.
+
+For more information, please see https://docs.microsoft.com/en-gb/azure/devops/artifacts/npm/npmrc?view=azure-devops#set-up-authentication-on-your-dev-box
+
+### Updates to the component library
+
+With each change of the component library a new version will be published to artifacts, if you need to use a specific version make sure to install the correct one
+
+Install latest version
+
+```
+npm install @mars/ui-kit
+```
+
+Install a specific version
+
+```
+npm install @mars/ui-kit@1.0.2
+```

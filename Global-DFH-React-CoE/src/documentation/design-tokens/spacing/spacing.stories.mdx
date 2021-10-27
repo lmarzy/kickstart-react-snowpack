@@ -1,0 +1,19 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { CssPropsBlock } from '@ljcl/storybook-addon-cssprops';
+import { Spacing } from './spacing';
+
+<Meta title="DESIGN TOKENS/Spacing" />
+
+# Design Token - Spacing
+
+Spacing is an important aspect of creating a user centric application and oftern overlooked. Spacing helps create a consistent rhythm and constrain decision making.
+
+The spacing system is based on using the line height as the default base which we then use multiple of this value for the varying measurements.
+
+All of the spacing values are stored as CSS custom properties and use REMs as the unit:
+
+<Preview>
+  <Story name="Spacing">
+    <Spacing />
+  </Story>
+</Preview>

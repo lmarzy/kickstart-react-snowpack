@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="COMPONENTS/typography/VisuallyHidden" />
+
+# Visually Hidden
+
+The `<VisuallyHidden />` component allows you to hide text but still make it available to screen readers.
+
+The `<VisuallyHidden />` component defaults to a `<p>` tag but can be changed to a 'span' using the `as` prop.
+
+```
+import { VisuallyHidden } from "@mars/uikit"
+```
+
+## Usage
+
+The `<VisuallyHidden />` component accepts the following props:
+
+```
+as = 'p' | 'span' (defaults to 'p')
+```
+
+```
+<VisuallyHidden>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, magnam.
+</VisuallyHidden>
+```

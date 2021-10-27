@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert Component renders an error alert 1`] = `
+<p
+  class="sc-bdnxRM gbZqVq"
+>
+  Error Alert
+</p>
+`;
+
+exports[`Alert Component renders an info alert 1`] = `
+<p
+  class="sc-bdnxRM jSatBq"
+>
+  Info Alert
+</p>
+`;
+
+exports[`Alert Component renders an success alert 1`] = `
+<p
+  class="sc-bdnxRM hsrOSS"
+>
+  Success Alert
+</p>
+`;
+
+exports[`Alert Component renders an warning alert 1`] = `
+<p
+  class="sc-bdnxRM hTVUlG"
+>
+  Warning Alert
+</p>
+`;

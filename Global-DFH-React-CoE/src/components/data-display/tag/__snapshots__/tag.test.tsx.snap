@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag Component renders the error tag component 1`] = `
+<span
+  class="sc-iJCRrE dHHpFQ"
+>
+  Tag Component
+</span>
+`;
+
+exports[`Tag Component renders the info tag component 1`] = `
+<span
+  class="sc-iJCRrE FMsZk"
+>
+  Tag Component
+</span>
+`;
+
+exports[`Tag Component renders the success tag component 1`] = `
+<span
+  class="sc-iJCRrE fuAHwE"
+>
+  Tag Component
+</span>
+`;
+
+exports[`Tag Component renders the warning tag component 1`] = `
+<span
+  class="sc-iJCRrE fwXhLs"
+>
+  Tag Component
+</span>
+`;

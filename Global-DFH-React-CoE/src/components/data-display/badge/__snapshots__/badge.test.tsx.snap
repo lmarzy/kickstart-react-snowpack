@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Component renders an error badge component 1`] = `[Function]`;
+
+exports[`Badge Component renders an info badge component 1`] = `[Function]`;
+
+exports[`Badge Component renders an success badge component 1`] = `[Function]`;
+
+exports[`Badge Component renders an warning badge component 1`] = `[Function]`;

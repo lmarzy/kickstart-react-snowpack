@@ -1,0 +1,35 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { CssPropsBlock } from '@ljcl/storybook-addon-cssprops';
+import { Typography } from './typography';
+
+<Meta title="DESIGN TOKENS/Typography" />
+
+# Design Token - Typography
+
+Typography helps with the organisation of information, clear heirarchies and guilds users through a product.
+
+It is important to have clear, approriately sized text to allow the user to navigate through our applications, we have chosed to use system fonts where possible. This will use the main font available from the operating system when an applications renders meaning no additional fonts are required.
+
+```
+font-family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'";
+```
+
+The base font size for all applicatins is set at 100%, this is typically 16px and the browsers default font size. This allows the font size to scale if changes were made to the font size in the browser. All other font size chanes are set in Rems which allow correct scaling of sizes.
+
+Line height is then set to a unitless value of 1.5 and to maintan scale the line height gets adjusted depending on the size change.
+
+```
+font-size: 100%;
+line-height: 1.5;
+```
+
+## Scale
+
+We have a set range of font sizes to use. We dont enforce heading levels to be a specific font size due to the limitations this may have on the document outline so instead we have two components to control headings and text which both accept props for size changes.
+All of the font sizes are stored in CSS custom properties. All font size changes should only ever come from these settings.
+
+<Preview>
+  <Story name="Typography">
+    <Typography />
+  </Story>
+</Preview>

@@ -1,0 +1,38 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { CssPropsBlock } from '@ljcl/storybook-addon-cssprops';
+import { ColorList } from './color-list';
+
+<Meta title="DESIGN TOKENS/Colors" />
+
+# Design Token - Colors
+
+Colours convey the brand and personality and help users navigate through the application. All the colours for the application can be seen below and include, text, background, border and brand colours.
+
+All colours are set as CSS custom properties.
+
+<Preview>
+  <Story name="Colors">
+    <ColorList heading="Blue" colors={['blue', 'blue-medium', 'blue-light']} />
+    <ColorList heading="Green" colors={['green', 'green-medium', 'green-light']} />
+    <ColorList
+      heading="Sky Blue"
+      colors={['skyblue', 'skyblue-medium', 'skyblue-light']}
+    />
+    <ColorList
+      heading="Fresh Green"
+      colors={['freshgreen', 'freshgreen-medium', 'freshgreen-light']}
+    />
+    <ColorList
+      heading="Spicy Red"
+      colors={['spicyred', 'spicyred-medium', 'spicyred-light']}
+    />
+    <ColorList
+      heading="Zesty Orange"
+      colors={['zestyorange', 'zestyorange-medium', 'zestyorange-light']}
+    />
+    <ColorList
+      heading="Shades"
+      colors={['grey', 'grey-medium', 'grey-light', 'grey-xlight']}
+    />
+  </Story>
+</Preview>

@@ -1,0 +1,48 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="COMPONENTS/General/Box" />
+
+# Box
+
+The `<Box></Box>` component is the most generic and allows controlling the margin and padding using the global spacing styles.
+
+The `<Box></Box>` component defaults to a `<div>` tag but can be changed to any of the following using the `as` prop.
+
+```
+section
+article
+aside
+span
+```
+
+```
+import { Box } from "to define"
+```
+
+## Usage
+
+The `<Box></Box>` component accepts the following props:
+
+```
+as      = 'div' | 'section' | 'article' | 'aside' | 'span' (defaults to 'div')
+m       = margin
+mb      = margin-bottom
+mt      = margin-top
+ml      = margin-left
+mr      = margin-right
+p       = padding-
+pb      = padding-bottom
+pt      = padding-top
+pl      = padding-left
+pr      = padding-right
+bgCol   = 'blue-2' | 'grey-light'
+border  = boolean
+
+Each of the spacing props accepts a value from the spacing variables set in the design tokens
+```
+
+```
+<Box>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, magnam.
+</Box>
+```
